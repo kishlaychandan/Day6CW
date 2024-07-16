@@ -1,6 +1,6 @@
 // src/Dashboard.js
 import React, { useState, useEffect } from 'react';
-// import { Pie } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './Dashboard.css';
 
@@ -12,6 +12,7 @@ const Dashboard = () => {
   const [tenure, setTenure] = useState(25);
 
   useEffect(() => {
+    // Update loan amount to ensure it's always valid
     const newLoanAmount = homeValue - downPayment;
     if (loanAmount > newLoanAmount) {
       setLoanAmount(newLoanAmount);
