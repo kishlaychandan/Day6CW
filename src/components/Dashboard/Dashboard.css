@@ -1,0 +1,21 @@
+.dashboard{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+}
+.controls{
+    width: 60%;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.controls .options{
+    display: flex;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1.3rem;
+}
+.chart{
+    width: 20%;
+}
